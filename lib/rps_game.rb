@@ -3,13 +3,13 @@ class String
     user1 = self
 
     if user1.eql?("rock") && user2.eql?("scissors")
-      "Rock wins"
+      "Rock Wins!"
     elsif user1.eql?("scissors") && user2.eql?("paper")
-      return true
+      return "Scissor Wins!"
     elsif user1.eql?("paper") && user2.eql?("rock")
-      return true
+      return "Paper Wins!"
     elsif user1 == user2
-      return true
+      return "It's a Tie!"
     end
 
   end

@@ -10,7 +10,7 @@ describe('String#beats?') do
 
   #make scissors beat paper
   it("returns true if scissors is the object and paper is the argument") do
-    expect("scissors".beats?("paper")).to(eq("Scissor Win!"))
+    expect("scissors".beats?("paper")).to(eq("Scissor Wins!"))
   end
 
   #make paper beat rock
@@ -20,7 +20,7 @@ describe('String#beats?') do
 
   #make matching results tie
   it("returns true if rock is the object and rock is the argument") do
-    expect("rock".beats?("rock")).to(eq("It's a tie!"))
+    expect("rock".beats?("rock")).to(eq("It's a Tie!"))
   end
 
 
