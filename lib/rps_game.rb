@@ -4,7 +4,8 @@ class String
 
     if user1.eql?("rock") && user2.eql?("scissors")
       return true
-    
+    elsif user1.eql?("scissors") && user2.eql?("paper")
+      return true
     end
 
   end
