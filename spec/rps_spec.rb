@@ -19,5 +19,9 @@ describe('String#beats?') do
   end
 
   #make matching results tie
+  it("returns true if rock is the object and rock is the argument") do
+    expect("rock".beats?("rock")).to(eq(true))
+  end
+
 
 end
