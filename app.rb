@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/result') do
-  @user1 = params.fetch('user1').rps_game(@user2)
+  @result = params.fetch('user1').beats?(params.fetch('user2'))
   erb(:result)
 end
