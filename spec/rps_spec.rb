@@ -5,7 +5,7 @@ require('pry')
 describe('String#beats?') do
   #make rock beat scissors
   it("returns true if rock is the object and scissors is the argument") do
-    expect("rock".beats?("scissors")).to(eq("Rock Wins!"))
+    expect("rock".beats?("scissors")).to(eq("Rock Wins! You da man, Player 1!"))
   end
 
   #make scissors beat paper
@@ -23,5 +23,8 @@ describe('String#beats?') do
     expect("rock".beats?("rock")).to(eq("It's a Tie!"))
   end
 
-
+  #make rock beats scissor for player 2 only
+  it("returns true if rock is the object and scissors is the argument") do
+    expect("rock".beats?("scissors")).to(eq("Rock Wins! You da man, Player 2!"))
+  end
 end
