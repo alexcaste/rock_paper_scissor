@@ -9,6 +9,9 @@ describe('String#beats?') do
   end
 
   #make scissors beat paper
+  it("returns true if scissors is the object and paper is the argument") do
+    expect("scissors".beats?("paper")).to(eq(true))
+  end
 
   #make paper beat rock
 
