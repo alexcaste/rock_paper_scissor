@@ -8,6 +8,8 @@ class String
       return true
     elsif user1.eql?("paper") && user2.eql?("rock")
       return true
+    elsif user1 == user2
+      return true
     end
 
   end
