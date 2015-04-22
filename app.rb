@@ -7,7 +7,7 @@ get('/') do
   erb(:index)
 end
 
-# get('/scrabble') do
-#   @score = params.fetch('score').scrabble()
-#   erb(:scrabble)
-# end
+get('/result') do
+  @user1 = params.fetch('user1').rps_game(@user2)
+  erb(:result)
+end
