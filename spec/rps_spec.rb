@@ -23,5 +23,9 @@ describe('String#beats?') do
     expect("rock".beats?("rock")).to(eq(true))
   end
 
+  #instead of returns true, returns winner text
+  it("returns true if rock is the object and scissor is the argument") do
+    expect("rock".beats?("scissors")).to(eq("Rock wins"))
+  end
 
 end
